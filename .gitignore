@@ -1,0 +1,16 @@
+**/bin
+**/resources
+*.class
+**/.classpath
+**/target/
+**/release.properties
+**/pom.xml.releaseBacskup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/buildNumber.properties
+**/.idea/
+**/*.iml
+*.tmp
+**src/main/resources/config.txt
