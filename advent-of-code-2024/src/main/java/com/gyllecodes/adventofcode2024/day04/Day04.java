@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class Day04 extends DayTemplate {
 
-    protected Day04(String filename) {
+    public Day04(String filename) {
         super(filename);
     }
 
