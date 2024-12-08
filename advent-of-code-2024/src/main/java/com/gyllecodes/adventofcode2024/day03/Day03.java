@@ -1,6 +1,6 @@
 package com.gyllecodes.adventofcode2024.day03;
 
-import com.gyllecodes.adventofcode2024.AocSolver;
+import com.gyllecodes.adventofcode2024.DayTemplate;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Day03 extends AocSolver {
+public class Day03 extends DayTemplate {
 
     public Day03(String filename) {
         super(filename);

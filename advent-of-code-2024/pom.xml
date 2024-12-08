@@ -68,7 +68,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.5.0</version>
                 <configuration>
-                    <mainClass>com.gyllecodes.adventofcode2024.Program</mainClass>
+                    <mainClass>com.gyllecodes.adventofcode2024.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>

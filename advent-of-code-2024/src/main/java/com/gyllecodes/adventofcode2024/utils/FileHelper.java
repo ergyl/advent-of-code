@@ -1,4 +1,4 @@
-package Utils;
+package com.gyllecodes.adventofcode2024.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,10 +9,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 public final class FileHelper {
     private static final Logger logger = LogManager.getLogger(FileHelper.class);
@@ -35,7 +33,7 @@ public final class FileHelper {
         }
     }
 
-    public static List<List<Integer>> getLists(String fileName) throws IOException {
+    public static List<List<Integer>> getIntegerLists(String fileName) throws IOException {
         try (BufferedReader reader = Files.newBufferedReader(Path.of("src/main/resources/input/" + fileName))) {
             var result = new ArrayList<List<Integer>>();
             String line;

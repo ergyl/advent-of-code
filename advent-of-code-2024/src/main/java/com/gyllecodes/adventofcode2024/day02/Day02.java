@@ -1,13 +1,13 @@
 package com.gyllecodes.adventofcode2024.day02;
 
-import com.gyllecodes.adventofcode2024.AocSolver;
+import com.gyllecodes.adventofcode2024.DayTemplate;
 
 import java.io.IOException;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day02 extends AocSolver {
+public class Day02 extends DayTemplate {
 
     public Day02(String filename) {
         super(filename);

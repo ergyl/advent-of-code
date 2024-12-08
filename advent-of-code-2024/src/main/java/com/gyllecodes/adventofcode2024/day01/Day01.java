@@ -1,10 +1,10 @@
 package com.gyllecodes.adventofcode2024.day01;
 
-import com.gyllecodes.adventofcode2024.AocSolver;
+import com.gyllecodes.adventofcode2024.DayTemplate;
 
 import java.util.*;
 
-public class Day01 extends AocSolver {
+public class Day01 extends DayTemplate {
     private final Set<Integer> firstColumn1 = new TreeSet<>();
     private final List<Integer> secondColumn1 = new ArrayList<>();
     private final Set<Integer> firstColumn2 = new TreeSet<>();
