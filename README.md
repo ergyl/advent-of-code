@@ -28,7 +28,7 @@ This will:
     • Use the corresponding input file `input01.txt` and solve the problem for Day 1.  
 Make sure you have the necessary `inputXX.txt` files in the `src/main/resources/input` folder. If they do not exist, the program will try to download them (requires a valid session ID and email in the `config.txt` file).  
 
-** Note!! ** Must add the new classfile to SOLVER_MAP in `DaySolverFactory` before you can run the solution.
+**Note!!** Must add the new classfile to SOLVER_MAP in `DaySolverFactory` before you can run the solution.
 
 ## Automation guidelines
 This repo follows the automation guidelines on the /r/adventofcode community wiki ([https://www.reddit.com/r/adventofcode/wiki/faqs/automation]). Specifically:
