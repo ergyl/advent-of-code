@@ -107,6 +107,11 @@ public class Main {
         return path.toFile().exists() && path.toFile().isFile();
     }
 
+    private static boolean srcForDaySolverExists(int dayOfTheMonth) {
+        Path srcFilePath = Paths.get(BASE_PATH, "day" + getDayAsString(dayOfTheMonth), "Day" + getDayAsString(dayOfTheMonth) + ".java");
+        return Files.exists(srcFilePath) && Files.isRegularFile(srcFilePath);
+    }
+
     /**
      * Downloads the input for a given day using the Advent of Code API,
      * requiring the `sessionId` and `emailAddress` to authenticate.
@@ -209,6 +214,11 @@ public class Main {
      */
     public static void solveForDay(int dayOfTheMonth) throws IOException {
         String inputFileName = "day" + getDayAsString(dayOfTheMonth) + ".txt";
+
+        if (!srcForDaySolverExists(dayOfTheMonth)) {
+            createSrc(dayOfTheMonth);
+        }
+        downloadInput(dayOfTheMonth);
         DayTemplate solver = DaySolverFactory.getSolver(dayOfTheMonth, inputFileName);
         solver.solve();
     }
