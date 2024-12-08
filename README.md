@@ -35,7 +35,6 @@ This repo follows the automation guidelines on the /r/adventofcode community wik
 - Outbound calls are throttled to every 5 minutes in `downloadInput()`
 - Once inputs are downloaded, they are cached locally (`inputExists()` returns `true`)
 - If you suspect your input is corrupted, you can manually request a fresh copy by deleting the corresponding .txt file in `src/main/resources/input`, e.g. `day04.txt` is the input file for `Day04.java`
-- The User-Agent header in `getInput()` is dynamically set by pulling email address and session Id from `config.txt`
+- The User-Agent header in `getInput()` is dynamically set by pulling email address and session Id from `config.txt`  
 
-# Please note
-**Note!** The `config.txt` file is not included in this repo so that must be added manually.
+The `config.txt` file is not included in this repo so that must be added manually.
